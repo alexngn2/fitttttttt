@@ -1,6 +1,6 @@
 "use strict";
 const router = require("express").Router();
-const Workout = require(`models/workoutModel.js`);
+const Workout = require("Workout", WorkoutSchema);
 
 router.post(`/api/workouts`, ({ body }, res) => {
   Workout.create(body)
